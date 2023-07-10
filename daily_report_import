@@ -1,0 +1,13 @@
+#Function to gather daily sales into one place
+  
+daily_reports = {}
+
+daily_sales = "3"
+day = "4.5."
+
+def daily_result_import(day, sales):
+  daily_reports[day] = sales
+
+daily_result_import(day=day, sales=daily_sales)
+  
+print(daily_reports)
