@@ -1,6 +1,7 @@
 #Main function to gather all sales events during a session 
 
 from datetime import datetime
+import daily_report_import
 
 daily_reports = {}
 
