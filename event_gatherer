@@ -1,4 +1,4 @@
-#Main function to gather all sales events during a session to one place
+#Main function to gather all sales events during a session 
 
 from datetime import datetime
 
