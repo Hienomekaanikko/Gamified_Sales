@@ -7,5 +7,3 @@ def new_session():
     daily_result_import(day=day, sales=daily_sales)
 
 new_session()
-
-new_session()
