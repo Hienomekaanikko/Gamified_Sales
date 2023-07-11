@@ -1,7 +1,6 @@
-#Main function to gather all sales events during a session 
 
 from datetime import datetime
-import daily_report_import
+
 
 daily_reports = {}
 
@@ -30,3 +29,4 @@ def event_gatherer(sales_amount, date):
       print("Invalid request")
 
 event_gatherer(sales_amount=daily_sales, date=day)
+
