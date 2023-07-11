@@ -1,0 +1,31 @@
+#Main function to gather all sales events during a session to one place
+
+from datetime import datetime
+
+daily_reports = {}
+
+daily_sales = 0
+day = ""
+
+def event_gatherer(sales_amount, date):
+  global daily_sales
+  global day
+  today = str(datetime.now())
+  day += today
+  sales_amount = 0
+  event_gatherer_on = True
+  while event_gatherer_on == True:
+    added_sale = int(input("Type number of sales: "))
+    sales_amount += added_sale
+    print(sales_amount)
+    status = input("OK or Quit? ")
+    if status == "Quit":
+      daily_sales += sales_amount
+      event_gatherer_on = False
+      
+    elif status == "OK":
+      event_gatherer_on = True
+    else:
+      print("Invalid request")
+
+event_gatherer(sales_amount=daily_sales, date=day)
