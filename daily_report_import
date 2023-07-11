@@ -1,4 +1,4 @@
-#Function to gather daily sales into one place
+#Function to gather daily sales into one dictionary
   
 daily_reports = {}
 
