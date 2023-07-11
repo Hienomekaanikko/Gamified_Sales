@@ -3,6 +3,9 @@ def new_session():
   if answer == "Y":
     event_gatherer(today=day, amount=daily_sales)
   else:
-    print("OK see you next time.")
+    print("OK see you next time. Here are the results so far: ")
+    daily_result_import(day=day, sales=daily_sales)
+
+new_session()
 
 new_session()
