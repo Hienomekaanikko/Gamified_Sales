@@ -1,0 +1,8 @@
+def new_session():
+  answer = input("Do you want to start a new session? Y or N: ")
+  if answer == "Y":
+    event_gatherer(today=day, amount=daily_sales)
+  else:
+    print("OK see you next time.")
+
+new_session()
